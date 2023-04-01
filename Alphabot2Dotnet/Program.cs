@@ -14,7 +14,7 @@ namespace CognitiveBots
             var gpioController = new GpioController(PinNumberingScheme.Logical);
 
             var buzzer = new Buzzer(gpioController);
-       /*     buzzer.Buzz();
+            buzzer.Buzz();
             Thread.Sleep(1000);
             buzzer.Silence();
 
@@ -23,7 +23,7 @@ namespace CognitiveBots
             collision.RightCollision += Collission_Right;
 
             var joystickController = new JoystickMotorController(gpioController);
-*/
+
             var rainbowLeds = new RainbowLeds();
             rainbowLeds.Run(1000);
 
